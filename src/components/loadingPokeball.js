@@ -1,5 +1,7 @@
 import React from 'react';
 
+// TO DO!
+
 const LoadingPokeball = () => {
   return (
     <div>
