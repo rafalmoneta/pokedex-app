@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './header';
 import Grid from './grid';
 import Pokemon from './pokemon';
+import Pagination from './pagination';
 
 function reducer(state, action) {
   switch(action.type) {
@@ -61,10 +62,11 @@ const PokemonApp = () => {
           })
         }
       </Grid>
-      <div>
-        {currentPage > 1 && <button onClick={() => setCurrentPage(currentPage - 1)}>Previous page</button>}
-        <button onClick={() => setCurrentPage(currentPage + 1)}>Next Page</button>
-      </div>
+      {!state.isLoading &&       
+        <Pagination 
+          setCurrentPage={setCurrentPage}
+        />
+      }
     </>
   );
 }
