@@ -9,6 +9,7 @@ Simple pokedex app created with React and JSON-server.
 - [x] List your pokemons
 - [ ] Add loading spinner (pokeball probably)
 - [x] Pagination
+- [ ] Pagination styles
 - [ ] 'Click' for more info
 - [ ] Favorites pokemons
 
